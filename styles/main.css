@@ -80,22 +80,8 @@ section2 i {
 }
 
 .numero {
-  top:85px;
-	position: absolute;
-    left: 20px;
-  	height: 18px;
-  	width: 18px;
-  	color: white;
-  	border: solid;
-  	border-radius: 100%;
-  	border-color: #9356DC;
-  	background-color: #9356DC;
-  
-  
-}
-.numero2 {
+  top: 105px;
   position: absolute;
-  top: 185px;
   left: 20px;
   height: 18px;
   width: 18px;
@@ -105,20 +91,6 @@ section2 i {
   border-color: #9356DC;
   background-color: #9356DC;
 }
-
-.numero3 {
-  position: absolute;
-  top: 285px;
-  left: 20px;
-  height: 18px;
-  width: 18px;
-  color: white;
-  border: solid;
-  border-radius: 100%;
-  border-color: #9356DC;
-  background-color: #9356DC;
-}
-
 .numero img {
   border: solid;
   border-radius: 50%;
@@ -150,7 +122,8 @@ button span i {
   border-top-left-radius: 20px;
   height: 175px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -179,6 +152,4 @@ nav {
 }
 .footnav .fa-solid {
   margin-right: 7px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
