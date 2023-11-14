@@ -1,4 +1,7 @@
-
+a {
+	text-decoration: none;
+	color: $color_1;
+}
 body {
 	display: flex;
 	flex-direction: column;
@@ -10,7 +13,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	color: $color_1;
+	color: $color_2;
 	padding-bottom: 14px;
 	img {
 		margin-top: 18px;
@@ -23,35 +26,53 @@ header {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: $background-color_1;
+	box-shadow: 0px -2px 2px darkgray;
+	color: $color_locali;
 	i {
 		margin-right: 15px;
+		color: $color_locali;
 	}
 }
 section {
-	text-align: center;
 	margin: auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	background-color: $background-color_2;
-	padding-bottom: 12%;
-	padding-top: 4%;
+	padding-bottom: 35px;
+	padding-top: 20px;
+	h1 {
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		margin: auto;
+		margin-top: 20px;
+		padding-bottom: unset;
+	}
+	p {
+		text-align: center;
+		font-weight: 100;
+		margin: auto;
+		margin-top: 15px;
+		padding-left: 15px;
+	}
 	button {
-		margin-left: 15%;
-		margin-right: 15%;
+		margin: auto;
 		font-size: 16px;
-		color: $color_2;
+		color: $color_3;
 		height: 50px;
 		background: linear-gradient(#FF79DA 0%, #9356DC 100%);
-		border-color: unset;
+		border-color: $border-color_1;
 		border-radius: 25px;
 		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 		padding-left: 5%;
 		padding-right: 5%;
 		margin-top: 25px;
+		margin-bottom: 20px;
 	}
 }
-section2 {
+.section2 {
+	padding-bottom: 40px;
 	position: relative;
 	text-align: center;
 	display: flex;
@@ -65,58 +86,117 @@ section2 {
 		padding-bottom: 26px;
 		border: #EAEAEA;
 		border-radius: 25px;
-		background-color: $background-color_4;
+		background-color: $background-color_3;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 		margin-bottom: 28px;
 	}
 	i {
-		color: $color_3;
+		color: $color_4;
 		font-size: 18px;
 		margin-right: 25px;
 	}
+	h2 {
+		display: flex;
+		padding-left: 20px;
+		padding-bottom: 15px;
+		padding-top: 25px;
+	}
 }
 .numero {
-	top:105px;
+	top: 135px;
 	position: absolute;
-    left: 20px;
-  	height: 18px;
-  	width: 18px;
-  	color: white;
-  	border: solid;
-  	border-radius: 100%;
-  	border-color: #9356DC;
-  	background-color: #9356DC;
+	left: 20px;
+	height: 18px;
+	width: 18px;
+	color: $color_3;
+	border: solid;
+	border-radius: 100%;
+	border-color: $border-color_2;
+	background-color: $background-color_4;
 	img {
 		border: solid;
 		border-radius: 50%;
 	}
 }
-
+.numero2 {
+	position: absolute;
+	top: 235px;
+	left: 20px;
+	height: 18px;
+	width: 18px;
+	color: $color_3;
+	border: solid;
+	border-radius: 100%;
+	border-color: $border-color_2;
+	background-color: $background-color_4;
+}
+.numero3 {
+	position: absolute;
+	top: 335px;
+	left: 20px;
+	height: 18px;
+	width: 18px;
+	color: $color_3;
+	border: solid;
+	border-radius: 100%;
+	border-color: $border-color_2;
+	background-color: $background-color_4;
+}
 button {
 	span {
 		i {
-			color: $color_4;
+			color: $color_5;
 		}
 	}
 }
 .card {
-	height: 250px;
+	height: 255px;
 	background-color: $background-color_5;
 	border-radius: 20px;
 	margin-left: 15px;
 	margin-right: 15px;
-	
 	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+	margin-bottom: 20px;
+}
+.card-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card-txt {
+	flex-direction: column;
+	padding-left: 10px;
+	font-weight: 100;
+	h3 {
+		margin: unset;
+		padding-top: 10px;
+	}
+	p {
+		margin: unset;
+		padding-top: 10px;
+	}
 }
 .card-love {
+	height: 100%;
 	display: flex;
+	justify-content: flex-end;
 }
-.section {
-	restaurant {
-		text-align: unset;
+.fa-regular {
+	font-size: 25px;
+	padding-right: 25px;
+	font-weight: 100;
+}
+.restau {
+	text-align: unset;
+	background-color: $background-color_3;
+	padding-bottom: 50px;
+	h2 {
+		padding-left: 20px;
+		padding-top: 30px;
 	}
 }
 .restaurants {
+	height: 280px;
 	img {
 		border-top-right-radius: 20px;
 		border-top-left-radius: 20px;
@@ -126,28 +206,36 @@ button {
 	}
 }
 footer {
-	padding-top: 7px;
 	padding-bottom: 25px;
-	padding-left: 8%;
-	padding-right: 8%;
+	padding-left: 25px;
+	padding-right: 25px;
 	display: flex;
 	flex-direction: column;
-	color: $color_2;
+	color: $color_3;
 	background-color: $background-color_6;
 	h2 {
+		padding-left: unset;
 		font-family: $font-family_2;
 		font-weight: normal;
 		font-size: 18px;
+		margin: unset;
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+	nav {
+		p {
+			margin: unset;
+			padding-top: 10px;
+		}
 	}
 }
-
-nav{
-    display: flex;
-    flex-direction: column; 
-    }   
-.footnav{
-    padding-top: 15px;
-    .fa-solid{
-        margin-right: 7px;
-    }
+nav {
+	display: flex;
+	flex-direction: column;
+}
+.footnav {
+	padding-top: 10px;
+	.fa-solid {
+		margin-right: 7px;
+	}
 }

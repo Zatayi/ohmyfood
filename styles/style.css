@@ -1,3 +1,8 @@
+
+a {
+  text-decoration: none;
+  color: black;
+ }
 body {
   display: flex;
   flex-direction: column;
@@ -24,24 +29,41 @@ header img {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #EAEAEA;
+  box-shadow: 0px -2px 2px darkgray;
+  color: #353535;
 }
 .locali i {
   margin-right: 15px;
+  color:#353535;
 }
 
 section {
-  text-align: center;
+  
   margin: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
-  padding-bottom: 12%;
-  padding-top: 4%;
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+section h1{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: unset;
+}
+section p{
+  text-align: center;
+  font-weight: 100;
+  margin: auto;
+  margin-top: 15px;
+  padding-left: 15px;
 }
 section button {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: auto;
   font-size: 16px;
   color: white;
   height: 50px;
@@ -52,15 +74,18 @@ section button {
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 25px;
+  margin-bottom: 20px;
+  border-style: unset;
 }
 
-section2 {
+.section2 {
+  padding-bottom: 40px;
   position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-section2 button {
+.section2 button {
   margin-left: 30px;
   margin-right: 20px;
   font-size: 16px;
@@ -73,14 +98,20 @@ section2 button {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   margin-bottom: 28px;
 }
-section2 i {
+.section2 i {
   color: grey;
   font-size: 18px;
   margin-right: 25px;
 }
+.section2 h2{
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
 
 .numero {
-  top:85px;
+  top:135px;
 	position: absolute;
     left: 20px;
   	height: 18px;
@@ -95,7 +126,7 @@ section2 i {
 }
 .numero2 {
   position: absolute;
-  top: 185px;
+  top: 235px;
   left: 20px;
   height: 18px;
   width: 18px;
@@ -108,7 +139,7 @@ section2 i {
 
 .numero3 {
   position: absolute;
-  top: 285px;
+  top: 335px;
   left: 20px;
   height: 18px;
   width: 18px;
@@ -129,20 +160,56 @@ button span i {
 }
 
 .card {
-  height: 250px;
+  height: 255px;
   background-color: white;
   border-radius: 20px;
   margin-left: 15px;
   margin-right: 15px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-bottom: 20px;
 }
-
-.card-love {
+.card-content{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.card-txt{
+  flex-direction: column;
+  padding-left: 10px;
+  font-weight: 100;
+}
+.card-txt h3{
+margin: unset;
+padding-top: 10px;
+}
+.card-txt p{
+  margin: unset;
+  padding-top: 10px;
+}
+.card-love {
+  height: 100%;
+  display: flex;
+  justify-content:flex-end;
+  
+}
+.fa-regular{
+font-size: 25px;
+padding-right: 25px;
+font-weight: 100;
+}
+.restau {
+  text-align: unset;
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 
-.section restaurant {
-  text-align: unset;
+.restau h2{
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.restaurants{
+  height: 280px;
 }
 
 .restaurants img {
@@ -154,28 +221,36 @@ button span i {
 }
 
 footer {
-  padding-top: 7px;
   padding-bottom: 25px;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 25px;
+  padding-right: 25px;
   display: flex;
   flex-direction: column;
   color: white;
   background-color: #353535;
 }
 footer h2 {
+  padding-left: unset;
   font-family: "shrikhand";
   font-weight: normal;
   font-size: 18px;
-}
+  margin: unset;
+  padding-top: 20px;
 
+  padding-bottom: 5px;
+}
+footer nav p{
+  margin: unset;
+  padding-top: 10px;
+  
+}
 nav {
   display: flex;
   flex-direction: column;
 }
 
 .footnav {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .footnav .fa-solid {
   margin-right: 7px;
