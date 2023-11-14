@@ -57,12 +57,15 @@ section h1{
 }
 section p{
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
+  font-size: 18px;
   margin: auto;
   margin-top: 15px;
   padding-left: 15px;
+  
 }
 section button {
+ 
   margin: auto;
   font-size: 16px;
   color: white;
@@ -98,10 +101,14 @@ section button {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   margin-bottom: 28px;
 }
+
 .section2 i {
   color: grey;
   font-size: 18px;
-  margin-right: 25px;
+  margin-right: 20px;
+}
+.section2 button span i {
+  color: #9356DC;
 }
 .section2 h2{
   display: flex;
@@ -113,14 +120,14 @@ section button {
 .numero {
   top:135px;
 	position: absolute;
-    left: 20px;
-  	height: 18px;
-  	width: 18px;
-  	color: white;
-  	border: solid;
-  	border-radius: 100%;
-  	border-color: #9356DC;
-  	background-color: #9356DC;
+  left: 20px;
+  height: 18px;
+  width: 18px;
+  color: white;
+  border: solid;
+  border-radius: 100%;
+  border-color: #9356DC;
+  background-color: #9356DC;
   
   
 }
@@ -153,10 +160,6 @@ section button {
 .numero img {
   border: solid;
   border-radius: 50%;
-}
-
-button span i {
-  color: #9356DC;
 }
 
 .card {
