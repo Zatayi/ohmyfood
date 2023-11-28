@@ -18,9 +18,20 @@ header {
   color: #353535;
   padding-bottom: 14px;
 }
+header .backarrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 header img {
   margin-top: 18px;
   height: 30px;
+}
+header i {
+  cursor: pointer;
+  margin-top: 18px;
+  font-size: 22px;
+  color: #000000;
 }
 
 .locali {
@@ -35,6 +46,12 @@ header img {
 .locali i {
   margin-right: 15px;
   color: #353535;
+}
+
+.photorest img {
+  width: 100%;
+  object-fit: cover;
+  height: 275px;
 }
 
 .start h1 {
@@ -241,15 +258,22 @@ h2 {
 }
 .card-love .fa-solid {
   font-size: 28px;
-  color: transparent;
+  color: #9356dc;
+  opacity: 0%;
   position: absolute;
+  transition: all 1.1s;
+  transform: all 1.1s;
 }
-.card-love .fa-solid:active {
+.card-love .fa-solid:hover {
+  opacity: 100%;
   background: linear-gradient(to top, #ff79da, #9356dc);
+  transform: all 1.5s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  transform: scale(1.01);
+  transition: all 1.1s;
 }
 .card-love .fa-regular {
   font-size: 28px;
@@ -335,56 +359,140 @@ footer nav p {
 }
 
 .palette {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
   margin-top: -60px;
 }
 .palette hr {
   border-color: #99E2D0;
   width: 35px;
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 .palette h2 {
+  justify-content: center;
+  align-items: center;
   font-family: "shrikhand";
   font-weight: normal;
   font-size: 28px;
 }
+.palette h2 .card-love {
+  margin-right: 5px;
+}
+.palette h2 .card-love i {
+  padding-left: 25px;
+  margin-right: 5px;
+}
 .palette h1 {
-  margin-left: unset;
+  margin-left: 15px;
   font-size: 16px;
   font-weight: 100;
+  margin-bottom: unset;
 }
 .palette button {
+  padding: unset;
+  height: 66px;
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 16px;
   font-weight: bold;
-  padding-top: 26px;
-  padding-bottom: 26px;
   border: #EAEAEA;
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
-
-.descri {
+.palette button a {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.descri p {
+.palette button a:hover > .check {
+  opacity: 100%;
+  width: 5%;
+  transform: scaleX(1.5);
+  transform-origin: right 0%;
+  transition: transform 1000ms, opacity 200ms;
+}
+.palette button a .descri {
+  display: flex;
+  flex-direction: row;
+}
+.palette button a .descri p {
   display: flex;
   font-size: 16px;
-  display: flex;
+  font-weight: 600;
   flex-direction: row;
-  justify-content: space-between;
+  margin-top: 38px;
+}
+.palette button a .intitule {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  justify-content: center;
+  align-items: flex-start;
+}
+.palette button a .intitule h3 {
+  padding-top: 5px;
+  padding-left: 15px;
+  margin: unset;
+  font-size: 18px;
+}
+.palette button a .intitule p {
+  padding-left: 15px;
+  font-size: 15px;
+  margin: unset;
+}
+.palette button a .check {
+  height: 66px;
+  width: 1px;
+  opacity: 0%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99E2D0;
+}
+.palette button a .check i {
+  background-color: #EAEAEA;
+  color: #99E2D0;
+  border-radius: 50%;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.commande button {
+.commande .entete {
+  margin: auto;
+  font-size: 16px;
+  color: white;
+  height: 50px;
   width: 40%;
+  border-color: unset;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-style: unset;
+  cursor: pointer;
+  background: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(167, 127, 216) 33%, rgb(255, 121, 218) 100%);
+  transition: box-shadow 0.5s, opacity 0.5s, transform 0.5s;
+}
+.commande .entete:hover {
+  opacity: 85%;
+  background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
+  box-shadow: 4px 8px 10px 4px rgba(0, 0, 0, 0.25);
+  -ms-transform: scale(1.01);
+  /* IE 9 */
+  -webkit-transform: scale(1.01);
+  /* Safari 3-8 */
+  transform: scale(1.01);
 }
 
 .loader-container {
@@ -532,6 +640,9 @@ footer nav p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .palette button {
+    width: 634px;
   }
   footer {
     display: flex;
