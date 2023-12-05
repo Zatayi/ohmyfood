@@ -1,7 +1,7 @@
 .card-love {
   height: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding-right: 7%;
 }
 .card-love .fa-solid {
