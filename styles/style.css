@@ -179,11 +179,6 @@ header {
   color: #353535;
   padding-bottom: 14px;
 }
-header .backarrow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 header img {
   margin: auto;
   margin-top: 18px;
