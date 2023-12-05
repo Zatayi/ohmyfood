@@ -1,3 +1,9 @@
+.backarrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .palette {
     hr {
         border-color: #99E2D0;
@@ -127,12 +133,12 @@
     }
 }
 
-
 .commande {
     .entete {
         width: 186px;
     }
 }
+
 
 
 
