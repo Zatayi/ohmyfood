@@ -34,7 +34,9 @@
 }
 
 .entete {
-  width: 190px;
+  width: 208px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
