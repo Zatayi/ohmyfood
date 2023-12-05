@@ -1,36 +1,22 @@
 .card-love {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-right: 7%;
+  cursor: pointer;
+  position: relative;
 }
-.card-love .fa-solid {
+.card-love i {
   font-size: 28px;
-  color: #9356dc;
-  opacity: 0%;
-  position: absolute;
-  transition: all 5s;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-}
-.card-love .fa-solid:hover {
-  opacity: 100%;
-  background: linear-gradient(to top, #ff79da, #9356dc);
-  transform: all 1.5s;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  transform: scale(1.01);
-  transition: all 1.1s;
-}
-.card-love .fa-regular {
-  font-size: 28px;
-  font-weight: 100;
   color: black;
 }
-.card-love .fa-regular:active {
+.card-love .fa-solid {
   color: transparent;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  left: 0;
+}
+.card-love .fa-solid:hover {
+  opacity: 1;
 }
 
 .entete {
@@ -65,32 +51,30 @@
   transform: scale(1.01);
 }
 
-.dessertdelay article .description {
-  animation-delay: 2s;
-}
-@keyframes slidein {
-  from {
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
     margin-left: 100%;
-    opacity: 0%;
   }
-  to {
+  100% {
+    opacity: 1;
     margin-left: 0%;
-    opacity: 100%;
   }
 }
-
-.platdelay article .description {
-  animation-delay: 1s;
+section.menu {
+  animation: fadeIn 0.5s both;
 }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    opacity: 0%;
-  }
-  to {
-    margin-left: 0%;
-    opacity: 100%;
-  }
+section.menu:nth-child(1) {
+  animation-delay: 500ms;
+}
+section.menu:nth-child(2) {
+  animation-delay: 1000ms;
+}
+section.menu:nth-child(3) {
+  animation-delay: 1500ms;
+}
+section.menu:nth-child(4) {
+  animation-delay: 2000ms;
 }
 
 footer {
@@ -489,13 +473,16 @@ i {
     margin-top: 30px;
     margin-bottom: 15px;
   }
+
   .locali {
     box-shadow: none;
   }
+
   section {
     padding-bottom: unset;
     padding-top: unset;
   }
+
   .start h1 {
     font-size: 40px;
   }
@@ -564,14 +551,6 @@ i {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 0%;
-  }
 }
 .palette article .description h4 {
   margin: 0;
@@ -661,9 +640,11 @@ i {
   section .section2 span i {
     color: #9356DC;
   }
+
   .bulles h2 {
     padding-left: 6%;
   }
+
   .restau {
     justify-content: space-around;
     display: flex;
@@ -676,6 +657,7 @@ i {
     padding-left: 20px;
     padding-top: 30px;
   }
+
   .restaurants {
     height: 280px;
   }
@@ -686,6 +668,7 @@ i {
     width: 100%;
     object-fit: cover;
   }
+
   .card {
     margin: unset;
     height: 255px;
@@ -698,12 +681,14 @@ i {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-bottom: 20px;
   }
+
   .card-content {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .palette {
     width: unset;
     margin-left: 15%;
@@ -731,6 +716,7 @@ i {
   .palette button {
     width: 634px;
   }
+
   .commande {
     width: unset;
     margin-left: 15%;
