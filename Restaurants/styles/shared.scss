@@ -13,6 +13,7 @@
         transform: all 5s;
         -webkit-background-clip: text;
         -moz-background-clip: text;
+
         &:hover {
             opacity: 100%;
             background: linear-gradient(to top, #ff79da, #9356dc);
@@ -38,7 +39,7 @@
 }
 
 .entete {
-    width: 190px;
+    width: 186px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +50,8 @@
     border-color: $border-color_unset;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: 25px;
     margin-bottom: 20px;
     border-style: unset;

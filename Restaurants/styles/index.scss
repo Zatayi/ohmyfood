@@ -122,10 +122,8 @@ p {
     }
 
     h2 {
-        margin-top: 40px;
-        display:flex;
-        padding-left:15px;
 
+        margin-top: 40px;
     }
 
     button {
@@ -171,7 +169,7 @@ i {
 .numero {
     top: 115px;
     position: absolute;
-    left: 20px;
+    left: 2%;
     height: 18px;
     width: 18px;
     color: $color_white;
@@ -190,7 +188,7 @@ i {
 .numero2 {
     position: absolute;
     top: 215px;
-    left: 20px;
+    left: 2%;
     height: 18px;
     width: 18px;
     color: $color_white;
@@ -203,7 +201,7 @@ i {
 .numero3 {
     position: absolute;
     top: 315px;
-    left: 20px;
+    left: 2%;
     height: 18px;
     width: 18px;
     color: $color_white;
@@ -213,11 +211,7 @@ i {
     background-color: $background-color_4;
 }
 
-.bulles{
-    h2{
-        padding-left:15px;
-    }
-}
+
 .card {
     height: 255px;
     background-color: $background-color_5;
