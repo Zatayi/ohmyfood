@@ -117,6 +117,8 @@ footer nav p {
 
 @media only screen and (min-width: 960px) {
   footer {
+    padding-bottom: 30px;
+    padding-top: 16px;
     display: flex;
     align-items: flex-end;
     padding-right: 20%;
@@ -161,7 +163,6 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  margin: auto;
   color: #353535;
   padding-bottom: 14px;
 }
@@ -197,6 +198,11 @@ header i {
   height: 275px;
 }
 
+.start {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #F6F6F6;
+}
 .start h1 {
   padding-left: 20px;
   padding-right: 20px;
@@ -206,10 +212,11 @@ header i {
   padding-bottom: unset;
 }
 .start p {
+  color: #353535;
   text-align: center;
 }
 
-section {
+.section {
   margin: auto;
   width: 100%;
   display: flex;
@@ -229,25 +236,25 @@ p {
 }
 
 .section2 {
+  padding-right: 15px;
   background-color: #FFFFFF;
-  padding-bottom: 40px;
   position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 .section2 .tri {
+  padding-left: 35px;
   flex-direction: column;
 }
 .section2 h2 {
+  padding-left: unset;
   margin-top: 40px;
   display: flex;
   padding-left: 15px;
 }
 .section2 button {
-  width: 90%;
-  margin-left: 30px;
-  margin-right: 20px;
+  width: 100%;
   font-size: 16px;
   font-weight: bold;
   padding-top: 26px;
@@ -317,6 +324,11 @@ i {
   background-color: #9356DC;
 }
 
+.bulles {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #F6F6F6;
+}
 .bulles h2 {
   padding-left: 15px;
 }
@@ -473,52 +485,94 @@ i {
     margin-top: 30px;
     margin-bottom: 15px;
   }
-
   .locali {
     box-shadow: none;
   }
-
   section {
     padding-bottom: unset;
     padding-top: unset;
   }
-
   .start h1 {
     font-size: 40px;
   }
+  .section2 .tri {
+    padding-left: unset;
+  }
+  .bulles {
+    padding-bottom: 10px;
+  }
+  #restau {
+    gap: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #restau h2 {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
 }
+header .backarrow {
+  display: flex;
+  align-items: center;
+}
+header i {
+  padding-left: 25px;
+  margin-right: -25px;
+}
+
 .palette {
+  background-color: #F6F6F6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
-  margin-top: -45px;
+  margin-top: -40px;
+  padding-bottom: 15px;
+  padding-top: 35px;
   /**** article ***/
 }
+.palette .entete {
+  width: 186px;
+  margin-top: 45px;
+}
 .palette hr {
+  border-left: unset;
+  border-width: 3px;
   border-color: #99E2D0;
   width: 35px;
+  border-top: unset;
   margin-left: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
-.palette h2 {
-  margin-top: unset;
-  display: flex;
-  padding-left: 20px;
-  padding-top: 20px;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "shrikhand";
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: unset;
-}
-.palette h2 .card-love {
+.palette .card-love {
   margin-right: 5px;
+  display: flex;
 }
-.palette h2 .card-love i {
+.palette .card-love i {
   padding-left: 25px;
   margin-right: 5px;
 }
-.palette h1 {
+.palette .card-love .fa-regular {
+  top: 4px;
+  position: absolute;
+  left: 82%;
+}
+.palette .card-love .fa-solid {
+  top: 4px;
+  position: absolute;
+  left: 82%;
+}
+.palette h2 {
+  margin-top: unset;
+  padding-left: 20px;
+  font-family: "shrikhand";
+  font-weight: normal;
+  font-size: 26px;
+  margin-bottom: unset;
+}
+.palette h3 {
   margin-left: 15px;
   font-size: 16px;
   font-weight: 100;
@@ -527,9 +581,9 @@ i {
 }
 .palette article {
   margin-left: 15px;
+  margin-right: 15px;
   display: flex;
   justify-content: space-between;
-  width: 90%;
   height: 69px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -599,11 +653,10 @@ i {
   margin-right: 0;
 }
 
-.commande .entete {
-  width: 186px;
-}
-
 @media only screen and (min-width: 960px) {
+  .photorest img {
+    height: 380px;
+  }
   section .section2 {
     padding-left: 5%;
     padding-right: 5%;
@@ -614,6 +667,7 @@ i {
   section .section2 .tri {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   section .section2 h2 {
     gap: 20px;
@@ -621,6 +675,7 @@ i {
   section .section2 button {
     width: 33%;
     height: 72px;
+    margin-left: 30px;
   }
   section .section2 .numero {
     position: absolute;
@@ -640,24 +695,9 @@ i {
   section .section2 span i {
     color: #9356DC;
   }
-
   .bulles h2 {
     padding-left: 6%;
   }
-
-  .restau {
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .restau a {
-    width: 40%;
-  }
-  .restau h2 {
-    padding-left: 20px;
-    padding-top: 30px;
-  }
-
   .restaurants {
     height: 280px;
   }
@@ -668,31 +708,46 @@ i {
     width: 100%;
     object-fit: cover;
   }
-
   .card {
     margin: unset;
     height: 255px;
-    width: 100%;
+    width: 45%;
     background-color: #f6f6f6;
     border-radius: 20px;
     flex-wrap: wrap;
-    margin-left: 15px;
     gap: 25px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-bottom: 20px;
   }
-
   .card-content {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .palette {
+    padding-top: 25px;
     width: unset;
     margin-left: 15%;
     margin-right: 15%;
+  }
+  .palette .card-love {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .palette .card-love h2 {
+    margin-left: unset;
+  }
+  .palette .card-love .fa-regular {
+    position: absolute;
+    left: unset;
+    top: unset;
+  }
+  .palette .card-love .fa-solid {
+    position: absolute;
+    left: unset;
+    top: unset;
   }
   .palette h2 {
     margin-left: 10%;
@@ -700,7 +755,7 @@ i {
     justify-content: center;
     margin-top: 35px;
   }
-  .palette h1 {
+  .palette h3 {
     width: 60%;
     margin-left: 20%;
   }
@@ -715,15 +770,6 @@ i {
   }
   .palette button {
     width: 634px;
-  }
-
-  .commande {
-    width: unset;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  .commande .entete {
-    width: 186px;
   }
 }
 

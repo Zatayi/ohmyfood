@@ -1,38 +1,72 @@
-.palette {
-    hr {
-        border-color: #99E2D0;
-        width: 35px;
-        margin-left: 15px;
-        margin-bottom: 15px;
-    }
 
+
+header{
+    .backarrow{
+        display: flex;
+        align-items: center;
+    }
+    i{
+        padding-left:25px;
+        margin-right: -25px;
+    }
+    
+}
+.palette {
+    background-color: #F6F6F6;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    margin-top: -45px;
-
+    margin-top: -40px;
+    padding-bottom: 15px;
+    padding-top: 35px;
+    .entete {
+        width: 186px;
+        margin-top:45px;
+    }
+    hr {
+        border-left:unset;
+        border-width: 3px;
+        border-color: #99E2D0;
+        width: 35px;
+        border-top: unset;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    
+    }
+    
+    .card-love {
+        margin-right: 5px;
+        display: flex;
+        
+        i {
+            padding-left: 25px;
+            margin-right: 5px;
+        }
+        .fa-regular{
+            top: 4px;
+            position: absolute;
+            left: 82%;
+            
+        }
+        .fa-solid {
+            top: 4px;
+            position: absolute;
+            left: 82%;   
+        }
+        
+    }
     h2 {
         margin-top: unset;
-        display: flex;
         padding-left: 20px;
-        padding-top: 20px;
-        justify-content: space-between;
-        align-items: center;
         font-family: $font-family_shrik;
         font-weight: normal;
-        font-size: 28px;
+        font-size: 26px;
         margin-bottom: unset;
 
-        .card-love {
-            margin-right: 5px;
-
-            i {
-                padding-left: 25px;
-                margin-right: 5px;
-            }
-        }
+        
     }
 
-    h1 {
+    h3 {
         margin-left: 15px;
         font-size: 16px;
         font-weight: 100;
@@ -44,9 +78,9 @@
 
     article {
         margin-left: 15px;
+        margin-right: 15px;
         display: flex;
         justify-content: space-between;
-        width: 90%;
         height: 69px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
@@ -121,19 +155,12 @@
     }
 }
 
-.commande {
-    .entete {
-        width: 186px;
-    }
-}
-
-
-
-
-
-
-
 @media only screen and (min-width: 960px) {
+    
+    .photorest img{
+        height: 380px;
+    }
+    
     section {
 
 
@@ -145,8 +172,10 @@
             text-align: center;
 
             .tri {
+                
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
             }
 
             h2 {
@@ -154,9 +183,9 @@
             }
 
             button {
-
                 width: 33%;
                 height: 72px;
+                margin-left: 30px;
             }
 
             .numero {
@@ -188,25 +217,13 @@
     }
 
     .bulles {
+        
         h2 {
             padding-left: 6%;
         }
     }
 
-    .restau {
-        justify-content: space-around;
-        display: flex;
-        flex-wrap: wrap;
-
-        a {
-            width: 40%;
-        }
-
-        h2 {
-            padding-left: 20px;
-            padding-top: 30px;
-        }
-    }
+    
 
     .restaurants {
         height: 280px;
@@ -224,11 +241,10 @@
     .card {
         margin: unset;
         height: 255px;
-        width: 100%;
+        width: 45%;
         background-color: $background-color_3;
         border-radius: 20px;
         flex-wrap: wrap;
-        margin-left: 15px;
         gap: 25px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         margin-bottom: 20px;
@@ -243,10 +259,28 @@
     }
 
     .palette {
+        padding-top: 25px;
         width: unset;
         margin-left: 15%;
         margin-right: 15%;
-
+        .card-love{
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+            h2{
+                margin-left: unset;
+            }
+            .fa-regular{
+                position: absolute;
+                left: unset;
+                top: unset;
+            }
+            .fa-solid {
+                position: absolute;
+                left: unset;
+                top: unset;  
+            }
+        }
         h2 {
             margin-left: 10%;
             padding-left: unset;
@@ -254,13 +288,12 @@
             margin-top: 35px;
         }
 
-        h1 {
+        h3 {
             width: 60%;
             margin-left: 20%;
         }
 
         hr {
-
             margin-left: 20%;
             margin-right: auto;
         }
@@ -277,14 +310,6 @@
 
     }
 
-    .commande {
-        width: unset;
-        margin-left: 15%;
-        margin-right: 15%;
-
-        .entete {
-            width: 186px;
-        }
-    }
+    
 
 }
